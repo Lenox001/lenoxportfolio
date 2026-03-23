@@ -4,24 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Larry Lenox | FullStack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaquesry.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
+    <link rel="stylesheet" href="mediaquery.css" />
   </head>
   <body>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
     <nav id="desktop-nav">
       <div class="logo">Larry Lenox</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about" onclick="toggleMenu()"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()"><i class="fas fa-briefcase"></i> Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()"><i class="fas fa-folder-open"></i> Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Larry Lenox</div>
       <div class="hamburger-menu">
@@ -38,407 +51,202 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/secondprofile.png"
-          alt="Larry Lenox profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Larry Lenox</h1>
-        <p class="section__text__p2">FullStack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.location.href='https://drive.google.com/file/d/1Zg0B0NjzaTRKdMKptONiiUJ0JLz1Ozdf/view?usp=drive_link'"
-          >
-            Download CV
-          </button>
 
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Lenox001'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
+    <main>
+      <section id="profile">
         <div class="section__pic-container">
-          <img
-            src="./assets/profileimg.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container ">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>3+ years <br />FullStack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Computer Science<br />Leiden University</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello! My name is Larry, and I’m an enthusiastic, detail-oriented
-              Full-Stack Developer with a proven track record in building
-              responsive web applications using modern technologies like
-              React.js, Django, and Laravel. I specialize in crafting dynamic
-              user interfaces and implementing RESTful APIs, with strong
-              expertise in JavaScript, HTML5, and CSS3. I also have experience
-              with Three.js for creating 3D graphics. I'm passionate about
-              optimizing application performance and delivering exceptional user
-              experiences. With excellent problem-solving skills and a
-              collaborative spirit, I’m excited to contribute to innovative
-              projects. Check out my GitHub page for more!Or find all my websites(20 plus) <a href="https://app.netlify.com/teams/lenox001/sites"><h2 style="
-              color: blue;">Here</h2></a>
-            </p>
+          <div class="profile-img-wrapper">
+            <img src="./assets/secondprofile.png" alt="Larry Lenox profile picture" />
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ReactJS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ThreeJS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Larry Lenox</h1>
+          <p class="section__text__p2" id="role-text">FullStack Developer</p>
+          <div class="btn-container">
+            <button class="btn btn-primary" onclick="window.location.href='https://drive.google.com/file/d/1Zg0B0NjzaTRKdMKptONiiUJ0JLz1Ozdf/view?usp=drive_link'">
+              <i class="fas fa-download"></i> Download CV
+            </button>
+            <button class="btn btn-secondary" onclick="location.href='./#contact'">
+              <i class="fas fa-paper-plane"></i> Contact Info
+            </button>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Laravel</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+          <div id="socials-container">
+            <a href="https://linkedin.com/" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Lenox001" target="_blank" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/restaurant.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Restaurant Landing Page
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Lenox001/Restaurant.git'"
-              >
-                Github
-              </button>
+      </section>
 
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://grillisapp.netlify.app/'"
-              >
-                Live Demo
-              </button>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container about-img">
+            <img src="./assets/profileimg.png" alt="Profile picture" class="about-pic" />
+          </div>
+          <div class="about-details-container">
+            <div class="about-cards">
+              <div class="info-card">
+                <i class="fas fa-code"></i>
+                <h3>Experience</h3>
+                <p>3+ years <br />FullStack Development</p>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>B.Sc. Computer Science<br />Leiden University</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Hello! My name is Larry, and I’m an enthusiastic, detail-oriented
+                Full-Stack Developer with a proven track record in building
+                responsive web applications using modern technologies like
+                React.js, Django, and Laravel. I specialize in crafting dynamic
+                user interfaces and implementing RESTful APIs, with strong
+                expertise in JavaScript, HTML5, and CSS3. I also have experience
+                with Three.js for creating 3D graphics. I'm passionate about
+                optimizing application performance and delivering exceptional user
+                experiences. With excellent problem-solving skills and a
+                collaborative spirit, I’m excited to contribute to innovative
+                projects. Check out my GitHub page for more! Or find all my websites (20+) 
+                <a href="https://app.netlify.com/teams/lenox001/sites" target="_blank" class="highlight-link">here</a>.
+              </p>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/photographer.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Photography App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Lenox001/Photographer.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://richardsphotography.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/NFT.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-             Metalink NFT WebApp
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Lenox001/metalink.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://thenftapp.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          
-          
-          
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:lenox001l@gmail.com">My Email</a></p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        <div class="section-arrow" onclick="location.href='#experience'">
+          <i class="fas fa-chevron-down"></i>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="skills-grid">
+            <div class="skills-category">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="skills-list">
+                <div class="skill-tag">HTML <span>Experienced</span></div>
+                <div class="skill-tag">CSS <span>Experienced</span></div>
+                <div class="skill-tag">SASS <span>Intermediate</span></div>
+                <div class="skill-tag">JavaScript <span>Experienced</span></div>
+                <div class="skill-tag">ReactJS <span>Experienced</span></div>
+                <div class="skill-tag">ThreeJS <span>Experienced</span></div>
+                <div class="skill-tag">Material UI <span>Intermediate</span></div>
+                <div class="skill-tag">Bootstrap <span>Experienced</span></div>
+              </div>
+            </div>
+            <div class="skills-category">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="skills-list">
+                <div class="skill-tag">PostgreSQL <span>Experienced</span></div>
+                <div class="skill-tag">Node JS <span>Intermediate</span></div>
+                <div class="skill-tag">Express JS <span>Intermediate</span></div>
+                <div class="skill-tag">Django <span>Experienced</span></div>
+                <div class="skill-tag">Laravel <span>Experienced</span></div>
+                <div class="skill-tag">Git <span>Experienced</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-arrow" onclick="location.href='#projects'">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/restaurant.png" alt="Restaurant Landing Page" />
+            </div>
+            <h2 class="project-title">Restaurant Landing Page</h2>
+            <div class="project-buttons">
+              <button onclick="location.href='https://github.com/Lenox001/Restaurant.git'" class="btn-outline">
+                <i class="fab fa-github"></i> Code
+              </button>
+              <button onclick="location.href='https://grillisapp.netlify.app/'" class="btn-outline">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/photographer.png" alt="Photography App" />
+            </div>
+            <h2 class="project-title">Photography App</h2>
+            <div class="project-buttons">
+              <button onclick="location.href='https://github.com/Lenox001/Photographer.git'" class="btn-outline">
+                <i class="fab fa-github"></i> Code
+              </button>
+              <button onclick="location.href='https://richardsphotography.netlify.app/'" class="btn-outline">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/NFT.png" alt="Metalink NFT WebApp" />
+            </div>
+            <h2 class="project-title">Metalink NFT WebApp</h2>
+            <div class="project-buttons">
+              <button onclick="location.href='https://github.com/Lenox001/metalink.git'" class="btn-outline">
+                <i class="fab fa-github"></i> Code
+              </button>
+              <button onclick="location.href='https://thenftapp.netlify.app/'" class="btn-outline">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="section-arrow" onclick="location.href='#contact'">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-wrapper">
+          <div class="contact-card">
+            <a href="mailto:lenox001l@gmail.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>lenox001l@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
       <p>Copyright &#169; 2023 Larry Lenox. All Rights Reserved.</p>
     </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
   </body>
 </html>
